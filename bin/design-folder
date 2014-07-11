@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+$: << File.expand_path(File.dirname(File.realpath(__FILE__)) + '/../lib')
+require 'rubygems'
+require 'design_folder'
+
+DesignFolder::Parser.new ARGV[0]
